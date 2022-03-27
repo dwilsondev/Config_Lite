@@ -9,6 +9,7 @@ Config Lite with aliases for the most useful methods.
 
 `updateSection`
 
+<br>
 
 ### Aliases for `setSection`
 
@@ -16,6 +17,7 @@ Config Lite with aliases for the most useful methods.
 
 `recreateSection`
 
+<br>
 
 ### Aliases for `remove`
 
@@ -23,6 +25,7 @@ Config Lite with aliases for the most useful methods.
 
 `delete`
 
+<br>
 
 ### Aliases for `removeSection`
 
@@ -30,7 +33,7 @@ Config Lite with aliases for the most useful methods.
 
 `deleteSection`
 
-For more information about Config Lite, please visit [https://github.com/pear/Config_Lite](https://github.com/pear/Config_Lite)
+### For more information about Config Lite, please visit [https://github.com/pear/Config_Lite](https://github.com/pear/Config_Lite)
 
 ===========
 
