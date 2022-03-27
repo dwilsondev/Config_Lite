@@ -584,6 +584,21 @@ class Config_Lite implements ArrayAccess, IteratorAggregate, Countable, Serializ
     }
 
     /**
+     * 
+     * Alias for remove.
+     * 
+     */
+    public function rm($sec, $key=null)
+    {
+        $this->remove($sec, $key);
+    }
+
+    public function delete($sec, $key=null)
+    {
+        $this->remove($sec, $key);
+    }
+
+    /**
      * remove section by name
      *
      * @param string $sec Section
@@ -597,6 +612,21 @@ class Config_Lite implements ArrayAccess, IteratorAggregate, Countable, Serializ
             throw new Config_Lite_Exception_UnexpectedValue('No such Section.');
         }
         unset($this->sections[$sec]);
+    }
+
+    /**
+     * 
+     * Aliases for removeSection.
+     * 
+     */
+    public function rmSection($sec)
+    {
+        $this->removeSection($sec);
+    }
+
+    public function deleteSection($sec)
+    {
+        $this->removeSection($sec);
     }
 
     /**
@@ -663,6 +693,26 @@ class Config_Lite implements ArrayAccess, IteratorAggregate, Countable, Serializ
     }
 
     /**
+     * 
+     * Aliases for set.
+     * 
+     */
+    public function add($sec, $key, $value = null)
+    {
+        $this->set($sec, $key, $value);
+    }
+
+    public function update($sec, $key, $value = null)
+    {
+        $this->set($sec, $key, $value);
+    }
+
+    public function updateSection($sec, $key, $value = null)
+    {
+        $this->set($sec, $key, $value);
+    }
+
+    /**
      * set a given array with key/value pairs to a section,
      * creates a new section if necessary.
      *
@@ -682,6 +732,21 @@ class Config_Lite implements ArrayAccess, IteratorAggregate, Countable, Serializ
         }
         $this->sections[$sec] = $pairs;
         return $this;
+    }
+
+    /**
+     * 
+     * Aliases for setSection.
+     * 
+     */
+    public function createSection($sec, $pairs)
+    {
+        $this->setSection($sec, $pairs);
+    }
+
+    public function recreateSection($sec, $pairs)
+    {
+        $this->setSection($sec, $pairs);
     }
 
     /**

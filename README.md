@@ -1,4 +1,41 @@
-Config_Lite
+# Config Lite+
+Config Lite with aliases for the most useful methods.
+
+### Aliases for `set`
+
+`add`
+
+`update`
+
+`updateSection`
+
+
+### Aliases for `setSection`
+
+`createSection`
+
+`recreateSection`
+
+
+### Aliases for `remove`
+
+`rm`
+
+`delete`
+
+
+### Aliases for `removeSection`
+
+`rmSection`
+
+`deleteSection`
+
+For more information about Config Lite, please visit [https://github.com/pear/Config_Lite](https://github.com/pear/Config_Lite)
+
+===========
+
+
+# Config_Lite
 ===========
 
 [![Build Status](https://secure.travis-ci.org/pear/Config_Lite.png?branch=master)](https://travis-ci.org/pear/Config_Lite)
